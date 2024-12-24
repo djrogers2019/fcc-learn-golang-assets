@@ -2,8 +2,10 @@ package main
 
 import "fmt"
 
+//when you want to apply parameters from one struct to another struct you can embed them in so you can use those parameters when you call the struct you want!
 type sender struct {
 	rateLimit int
+	user
 }
 
 type user struct {
